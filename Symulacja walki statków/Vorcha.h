@@ -9,8 +9,11 @@ class Vorcha :public Statek
 {
 
 public:
+
+    Vorcha();
     Vorcha(string n);
     virtual double sila_ognia();
+
 
 };
 

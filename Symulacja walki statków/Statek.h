@@ -18,13 +18,14 @@ private:
 
 public:
 
+    Statek();
     Statek(string n, int liczba_d, int liczba_w, double p);
     string get_nazwa();
     int get_liczba_dzialek();
     int get_liczba_wyrzutni();
     bool walka(Statek &s);
     double get_pancerz();
-    virtual double sila_ognia()=0;
+    virtual double sila_ognia();
     void wyswietl();
 
 

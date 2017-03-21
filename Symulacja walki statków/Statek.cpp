@@ -9,7 +9,10 @@ Statek::Statek(string n, int liczba_d, int liczba_w, double p)
 {
 
 }
+Statek::Statek()
+{
 
+}
 string Statek::get_nazwa()
 {
     return nazwa;
@@ -33,6 +36,7 @@ void Statek::wyswietl()
     cout << "Nazwa statku: "<< nazwa << endl;
     cout << "Sila ognia: "<< sila_ognia() << endl;
     cout << "Pancerz: "<< pancerz << endl;
+    cout << "-----------------------------"<< endl;
 
 }
 
@@ -52,4 +56,12 @@ void Statek::wyswietl()
          return false;
      }
  }
+
+ double Statek::sila_ognia()
+ {
+       return 1* get_liczba_dzialek() + 2* get_liczba_wyrzutni();
+
+ }
+
+
 

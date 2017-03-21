@@ -10,6 +10,7 @@ class Defiant :public Statek
 
 public:
     Defiant(string n);
+    Defiant();
     virtual double sila_ognia();
 
 };

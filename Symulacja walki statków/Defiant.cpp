@@ -6,6 +6,10 @@ Defiant::Defiant(string n)
 {
 
 }
+Defiant::Defiant()
+{
+
+}
 
 double Defiant::sila_ognia()
 {
