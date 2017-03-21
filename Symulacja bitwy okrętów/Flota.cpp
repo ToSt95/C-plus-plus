@@ -12,9 +12,39 @@ Flota::Flota(int l,Statek *t)
 {
   tab = new Statek[liczba_statkow];
 
+
   for (int i = 0;i<liczba_statkow;i++)
   {
-      tab[i] = t[i];
+      this->tab[i] = t[i];
+
+  }
+
+}
+
+Flota::Flota(int l,Defiant *t)
+:liczba_statkow(l)
+{
+  tab = new Defiant[liczba_statkow];
+
+
+  for (int i = 0;i<liczba_statkow;i++)
+  {
+      this->tab[i] = t[i];
+
+  }
+
+}
+
+Flota::Flota(int l,Vorcha *t)
+:liczba_statkow(l)
+{
+  tab = new Vorcha[liczba_statkow];
+
+
+  for (int i = 0;i<liczba_statkow;i++)
+  {
+      this->tab[i] = t[i];
+
   }
 
 }

@@ -2,6 +2,8 @@
 #define FLOTA_H
 
 #include "Statek.h"
+#include "Defiant.h"
+#include "Vorcha.h"
 
 class Flota
 {
@@ -11,10 +13,11 @@ class Flota
 
 public:
     Flota(int l,Statek *t);
+    Flota(int l,Vorcha *t);
+    Flota(int l,Defiant *t);
     Flota();
     ~Flota();
     void bitwa(Flota &f);
-    Statek get_tab();
     int get_liczba_statkow();
 };
 

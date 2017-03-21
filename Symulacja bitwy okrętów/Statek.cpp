@@ -43,8 +43,9 @@ void Statek::wyswietl()
  bool Statek::walka(Statek &s)
  {
      srand (time(NULL));
+     int r = rand() % 2;
 
-     this->pancerz -= s.sila_ognia() *1;
+     this->pancerz -= s.sila_ognia() * r;
 
      if(this->pancerz <= 0)
      {
@@ -59,7 +60,7 @@ void Statek::wyswietl()
 
  double Statek::sila_ognia()
  {
-       return 1* get_liczba_dzialek() + 2* get_liczba_wyrzutni();
+       //return 1* get_liczba_dzialek() + 2* get_liczba_wyrzutni();
 
  }
 
