@@ -13,8 +13,6 @@ class Flota
 
 public:
     Flota(int l,Statek *t);
-    Flota(int l,Vorcha *t);
-    Flota(int l,Defiant *t);
     Flota();
     ~Flota();
     void bitwa(Flota &f);

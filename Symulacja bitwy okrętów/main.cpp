@@ -16,7 +16,7 @@ int main()
     Defiant *d4 =  new Defiant("d4");
 
 
-    Defiant* tab2 = new Defiant[4];
+    Statek* tab2 = new Defiant[4];
 
     tab2[0] = *d1;
     tab2[1] = *d2;
@@ -31,7 +31,7 @@ int main()
     Vorcha *v3= new Vorcha("v3");
     Vorcha *v4= new Vorcha("v4");
 
-    Vorcha* tab = new  Vorcha[4];
+    Statek* tab = new  Vorcha[4];
     tab[0] = *v1;
     tab[1] = *v2;
     tab[2] = *v3;

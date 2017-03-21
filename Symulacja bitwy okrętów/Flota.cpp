@@ -8,9 +8,12 @@ Flota::Flota()
 }
 
 Flota::Flota(int l,Statek *t)
-:liczba_statkow(l)
+:liczba_statkow(l),tab(t)
 {
-  tab = new Statek[liczba_statkow];
+  Defiant *pnt = dynamic_cast<Defiant*>(t);
+  if(pnt)
+  {
+      tab = new Defiant[liczba_statkow];
 
 
   for (int i = 0;i<liczba_statkow;i++)
@@ -19,12 +22,11 @@ Flota::Flota(int l,Statek *t)
 
   }
 
-}
+  }
 
-Flota::Flota(int l,Defiant *t)
-:liczba_statkow(l)
-{
-  tab = new Defiant[liczba_statkow];
+  else
+  {
+      tab = new Vorcha[liczba_statkow];
 
 
   for (int i = 0;i<liczba_statkow;i++)
@@ -32,22 +34,12 @@ Flota::Flota(int l,Defiant *t)
       this->tab[i] = t[i];
 
   }
-
-}
-
-Flota::Flota(int l,Vorcha *t)
-:liczba_statkow(l)
-{
-  tab = new Vorcha[liczba_statkow];
-
-
-  for (int i = 0;i<liczba_statkow;i++)
-  {
-      this->tab[i] = t[i];
-
   }
 
+
 }
+
+
 
 Flota::~Flota()
 {
