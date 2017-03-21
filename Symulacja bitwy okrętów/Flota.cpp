@@ -10,32 +10,6 @@ Flota::Flota()
 Flota::Flota(int l,Statek *t)
 :liczba_statkow(l),tab(t)
 {
-  Defiant *pnt = dynamic_cast<Defiant*>(t);
-  if(pnt)
-  {
-      tab = new Defiant[liczba_statkow];
-
-
-  for (int i = 0;i<liczba_statkow;i++)
-  {
-      this->tab[i] = t[i];
-
-  }
-
-  }
-
-  else
-  {
-      tab = new Vorcha[liczba_statkow];
-
-
-  for (int i = 0;i<liczba_statkow;i++)
-  {
-      this->tab[i] = t[i];
-
-  }
-  }
-
 
 }
 
@@ -43,7 +17,7 @@ Flota::Flota(int l,Statek *t)
 
 Flota::~Flota()
 {
-    delete [] tab;
+    delete tab;
 }
 
 void Flota::bitwa(Flota &f)
@@ -85,13 +59,13 @@ void Flota::bitwa(Flota &f)
     if(tab[liczba_statkow-1].get_pancerz() >0)
     {
         cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"<< endl;
-        cout << "Wygrywa flota " << tab[liczba_statkow-1].get_nazwa() << endl;
+        cout << "Wygrywa flota " << tab[0].get_nazwa() << endl;
         cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"<< endl;
     }
     else
     {
        cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"<< endl;
-       cout << "Wygrywa flota " << f.tab[f.liczba_statkow-1].get_nazwa() << endl;
+       cout << "Wygrywa flota " << f.tab[0].get_nazwa() << endl;
        cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"<< endl;
 
     }
