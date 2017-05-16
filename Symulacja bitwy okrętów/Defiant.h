@@ -2,7 +2,7 @@
 #define DEFIANT_H
 
 #include "Statek.h"
-
+//
 using namespace std;
 
 class Defiant :public Statek
