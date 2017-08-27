@@ -1,5 +1,5 @@
 Wejœcie
-
+/////////////////////////////////////////////////////////////////
 W pierwszym wierszu N - liczba wierszy tekstu do analizy . W ka¿dym z nastêpuj¹cych N wierszy ci¹g z³o¿ony z  ma³ych i wielkich liter alfabetu ³aciñskiego ('a'..'z', 'A'..'Z') oraz spacji.
 Wyjœcie
 
